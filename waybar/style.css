@@ -1,0 +1,105 @@
+* {
+    font-family: Agave Nerd Font;
+    font-size: 16px;
+    font-weight: bold;
+}
+window#waybar {
+    background-color: transparent;
+    color: White;
+    
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+window#waybar.empty {
+    background-color: transparent;
+}
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 100%;
+    min-width: 22px;
+    min-height: 16px;
+}
+
+#workspaces {
+  padding: 0px 16px 0px 16px;
+  border-radius: 16px;
+  background-color: DarkSlateGray; 
+}
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: White;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+
+}
+
+#workspaces button.focused {
+    background-color: White;;
+    color: DarkSlateGray;
+}
+
+#workspaces button.urgent {
+    background-color: Red;
+}
+
+#mode,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+#window,
+#workspaces,
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left {
+  margin-left: 16px;
+}
+
+/*
+.modules-center {
+  
+}
+*/
+
+.modules-right {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: 16px;
+  border-radius: 16px;
+  background-color: DarkSlateGray; 
+}
+
+#battery {
+    color: white;
+}
+
+#battery.charging, #battery.plugged {
+    color: lime;
+}
+
+#battery.critical:not(.charging) {
+    color: red;
+}
