@@ -35,6 +35,10 @@ button {
     color: #ffffff;
 }
 
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
 #workspaces button.focused {
     background-color: #ffffff;
     color: #282a36;
