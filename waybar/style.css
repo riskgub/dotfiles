@@ -5,7 +5,7 @@
 }
 window#waybar {
     background-color: transparent;
-    color: White;
+    color: #ffffff;
     
 }
 
@@ -25,28 +25,25 @@ button {
 }
 
 #workspaces {
-  padding: 0px 16px 0px 16px;
-  border-radius: 16px;
-  background-color: DarkSlateGray; 
+    padding: 0px 16px 0px 16px;
+    border-radius: 16px;
+    background-color: #282a36;
 }
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: White;
-}
-
-#workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
-
+    color: #ffffff;
 }
 
 #workspaces button.focused {
-    background-color: White;;
-    color: DarkSlateGray;
+    background-color: #ffffff;
+    color: #282a36;
+
 }
 
 #workspaces button.urgent {
-    background-color: Red;
+    background-color: #ef8091;
+    color: #282a36;
 }
 
 #mode,
@@ -73,7 +70,6 @@ button {
 #window,
 #workspaces,
 
-/* If workspaces is the leftmost module, omit left margin */
 .modules-left {
   margin-left: 16px;
 }
@@ -89,17 +85,17 @@ button {
   padding-right: 16px;
   margin-right: 16px;
   border-radius: 16px;
-  background-color: DarkSlateGray; 
+  background-color: #282a36; 
 }
 
 #battery {
-    color: white;
+    color: #ffffff;
 }
 
 #battery.charging, #battery.plugged {
-    color: lime;
+    color: #afde80;
 }
 
 #battery.critical:not(.charging) {
-    color: red;
+    color: #ef8091
 }
